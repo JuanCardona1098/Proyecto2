@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+.logo{
+    width: 200px;
+    border-radius: 50%;
+}
+.btnClear{
+    height: 50px;
+    width: 70px;
+    padding: 0px 15px;
+    border-radius: 8px;
+    border-color: whitesmoke;
+    background-color: rgb(41, 201, 81);
+    color: black;
+    cursor: pointer;
+}
+/*
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    padding: 15px;
+}
+div{
+    display: flex;
+    justify-content: flex-end;
+} */
+/* .menuLink{
+    background-color: #1f1f1f;
+    padding: 15px;
+    color: white;
+    width: 90px;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+.menuLink:hover{
+    background-color: rgb(41, 201, 81);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+} */
+.mainContainer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    flex-wrap: wrap;
+    position: relative;
+  }
+/* Acá comienzan los estilos de contenedores para las cards */
+.card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(41, 201, 81);
+    min-height: 500px;
+  }
+  .pic {
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .pic:hover{
+    background-color: rgb(41, 201, 81);
+    color: rgb(41, 201, 81);
+    transform: scale(1.1);
+  }
+
+  .infoContainer {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .textContainer {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 40px;
+  }
+
+  .subTitle {
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .answer {
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(41, 201, 81);
+    font-style: italic;
+
+  }
+
+  @media (max-width: 768px) {
+    .mainContainer {
+      padding: 100px 20px;
+    }
+    .card {
+      width: 100%;
+    }
+  }
